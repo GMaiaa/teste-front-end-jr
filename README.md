@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">
+  <br>
+  <a href="https://www.figma.com/file/pyqnpGSHgGOUi20sfVaGzS/food-explorer-v2-(Community)-(Community)?type=design&node-id=201-1534&mode=design&t=0vQwIDvwR4WXI704-0"><img src="https://camo.githubusercontent.com/d2fa71fe5703df8a1408528a4e676d00d6cc61b64e3acda4c636b8d9a47e582a/68747470733a2f2f692e696d6775722e636f6d2f654f7750624f742e6a7067">
+</a>
+  <br>
+  Teste Estágio Frontend
+  <br>
+</h1>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+Projeto bem estruturado e organizado em questão de componentes e pastas.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Funções, variáveis, classes, arquivos, tabelas e todos os outros elementos do código têm nomes significativos, de acordo com as boas práticas de mercado.
+
+Layout utilizado conforme o fornecido pela Econverse.
+
+
+Deploy : [https://foodexplorer-gabrielmaia.netlify.app/](https://teste-econverse-gms.netlify.app/)
+
+
+## How To Use
+
+
+For the entire application work, you need to run the backend of the project ( Backend repository: https://github.com/GMaiaa/foodexplorerbackend)
+
+```bash
+# Clone this repository
+$ git clone https://github.com/GMaiaa/teste-front-end-jr.git
+
+# Go into the repository
+$ cd teste-front-end-jr
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
