@@ -30,8 +30,6 @@ Deploy : [https://foodexplorer-gabrielmaia.netlify.app/](https://teste-econverse
 ## How To Use
 
 
-For the entire application work, you need to run the backend of the project ( Backend repository: https://github.com/GMaiaa/foodexplorerbackend)
-
 ```bash
 # Clone this repository
 $ git clone https://github.com/GMaiaa/teste-front-end-jr.git
