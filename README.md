@@ -24,7 +24,7 @@ Funções, variáveis, classes, arquivos, tabelas e todos os outros elementos do
 Layout utilizado conforme o fornecido pela Econverse.
 
 
-Deploy : [https://foodexplorer-gabrielmaia.netlify.app/](https://teste-econverse-gms.netlify.app/)
+link deploy: https://teste-econverse-gms.netlify.app
 
 
 ## How To Use
